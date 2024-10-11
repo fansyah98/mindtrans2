@@ -9,13 +9,26 @@
   </head>
   <body>
 
-    <!-- Just an image -->
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="<?=base_url()?>asset/image/hallo.png" width="30" height="30" alt="" loading="lazy">
-    </a>
-  </nav>
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">webcodingmedia</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="<?=site_url('welcome')?>">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Coba Mindtrans</a>
+        </li>
+      
+      </ul>
+    
+    </div>
+  </div>
+</nav>
     <div class="container">
       <form id="payment-form" method="post" action="<?=site_url()?>/snap/finish">
         <input type="hidden" name="result_type" id="result-type" value=""></div>
